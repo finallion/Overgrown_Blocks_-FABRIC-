@@ -12,6 +12,10 @@ import java.util.Optional;
 @Mixin(Oxidizable.class)
 public interface OxidizableMixin {
 
+    // currently not able to mixin into static methods from interface
+    // overwrite makes the mod incompatible with other mods overwriting these methods
+    // change as soon as interface mixin is possible
+
     @Overwrite
     static Optional<Block> getDecreasedOxidationBlock(Block block) {
         return OxidizableRegistry.getDecreasedOxidizationBlock(block);
