@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oak_log",
+    "minecraft:oak_wood",
+    "minecraft:stripped_oak_log",
+    "minecraft:stripped_oak_wood",
+
+    "mossywood:damp_oak_log",
+    "mossywood:damp_stripped_oak_log",
+    "mossywood:mossy_oak_log",
+    "mossywood:mossy_stripped_oak_log",
+    "mossywood:moss_covered_oak_log",
+    "mossywood:moss_covered_stripped_oak_log",
+    "mossywood:overgrown_oak_log",
+    "mossywood:overgrown_stripped_oak_log",
+
+    "mossywood:waxed_damp_oak_log",
+    "mossywood:waxed_damp_stripped_oak_log",
+    "mossywood:waxed_mossy_oak_log",
+    "mossywood:waxed_mossy_stripped_oak_log",
+    "mossywood:waxed_moss_covered_oak_log",
+    "mossywood:waxed_moss_covered_stripped_oak_log",
+    "mossywood:waxed_overgrown_oak_log",
+    "mossywood:waxed_overgrown_stripped_oak_log"
+  ]
+}

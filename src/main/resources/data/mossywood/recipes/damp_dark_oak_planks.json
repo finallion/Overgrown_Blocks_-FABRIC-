@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "damp_planks",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "Y": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "item": "mossywood:damp_dark_oak_planks",
+    "count": 8
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "damp_stripped_log",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stripped_oak_log"
+    },
+    "Y": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "item": "mossywood:damp_stripped_oak_log",
+    "count": 8
+  }
+}

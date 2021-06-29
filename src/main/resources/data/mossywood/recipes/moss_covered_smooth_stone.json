@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moss_covered_stones",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:smooth_stone"
+    },
+    "Y": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "item": "mossywood:moss_covered_smooth_stone",
+    "count": 8
+  }
+}

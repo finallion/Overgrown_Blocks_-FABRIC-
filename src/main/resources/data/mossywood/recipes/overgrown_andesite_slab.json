@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_slabs",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:overgrown_andesite"
+    }
+  },
+  "result": {
+    "item": "mossywood:overgrown_andesite_slab",
+    "count": 6
+  }
+}

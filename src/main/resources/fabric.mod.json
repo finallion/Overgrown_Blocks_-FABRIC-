@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "mossywood",
+  "version": "1.1",
+
+  "name": "Mossy Wood",
+  "description": "Wood that becomes more and more mossy with time. New copper oxidization mechanic applied to wood!",
+  "authors": [
+    "Finallion"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.finallion.mossywood.MossyWood"
+    ],
+    "client": [
+      "com.finallion.mossywood.MossyWoodClient"
+    ]
+  },
+  "mixins": [
+    "mossywood.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

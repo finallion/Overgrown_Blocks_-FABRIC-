@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "damp_stairs",
+  "pattern": [
+    "X  ",
+    "XX ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:damp_dark_oak_planks"
+    }
+  },
+  "result": {
+    "item": "mossywood:damp_dark_oak_stairs",
+    "count": 4
+  }
+}

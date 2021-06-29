@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moss_covered_stones",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:deepslate"
+    },
+    "Y": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "item": "mossywood:moss_covered_deepslate",
+    "count": 8
+  }
+}

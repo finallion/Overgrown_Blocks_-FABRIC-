@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "damp_slabs",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:damp_smooth_stone"
+    }
+  },
+  "result": {
+    "item": "mossywood:damp_smooth_stone_slab",
+    "count": 6
+  }
+}

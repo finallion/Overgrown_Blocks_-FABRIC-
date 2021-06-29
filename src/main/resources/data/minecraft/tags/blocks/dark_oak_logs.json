@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dark_oak_log",
+    "minecraft:dark_oak_wood",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_dark_oak_wood",
+
+    "mossywood:damp_dark_oak_log",
+    "mossywood:damp_stripped_dark_oak_log",
+    "mossywood:mossy_dark_oak_log",
+    "mossywood:mossy_stripped_dark_oak_log",
+    "mossywood:moss_covered_dark_oak_log",
+    "mossywood:moss_covered_stripped_dark_oak_log",
+    "mossywood:overgrown_dark_oak_log",
+    "mossywood:overgrown_stripped_dark_oak_log",
+
+    "mossywood:waxed_damp_dark_oak_log",
+    "mossywood:waxed_damp_stripped_dark_oak_log",
+    "mossywood:waxed_mossy_dark_oak_log",
+    "mossywood:waxed_mossy_stripped_dark_oak_log",
+    "mossywood:waxed_moss_covered_dark_oak_log",
+    "mossywood:waxed_moss_covered_stripped_dark_oak_log",
+    "mossywood:waxed_overgrown_dark_oak_log",
+    "mossywood:waxed_overgrown_stripped_dark_oak_log"
+  ]
+}

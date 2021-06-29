@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:acacia_log",
+    "minecraft:acacia_wood",
+    "minecraft:stripped_acacia_log",
+    "minecraft:stripped_acacia_wood",
+
+    "mossywood:damp_acacia_log",
+    "mossywood:damp_stripped_acacia_log",
+    "mossywood:mossy_acacia_log",
+    "mossywood:mossy_stripped_acacia_log",
+    "mossywood:moss_covered_acacia_log",
+    "mossywood:moss_covered_stripped_acacia_log",
+    "mossywood:overgrown_acacia_log",
+    "mossywood:overgrown_stripped_acacia_log",
+
+    "mossywood:waxed_damp_acacia_log",
+    "mossywood:waxed_damp_stripped_acacia_log",
+    "mossywood:waxed_mossy_acacia_log",
+    "mossywood:waxed_mossy_stripped_acacia_log",
+    "mossywood:waxed_moss_covered_acacia_log",
+    "mossywood:waxed_moss_covered_stripped_acacia_log",
+    "mossywood:waxed_overgrown_acacia_log",
+    "mossywood:waxed_overgrown_stripped_acacia_log"
+  ]
+}

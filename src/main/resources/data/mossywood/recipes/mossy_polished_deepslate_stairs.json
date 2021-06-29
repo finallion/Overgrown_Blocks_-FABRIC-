@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mossy_stairs",
+  "pattern": [
+    "X  ",
+    "XX ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:mossy_polished_deepslate"
+    }
+  },
+  "result": {
+    "item": "mossywood:mossy_polished_deepslate_stairs",
+    "count": 4
+  }
+}

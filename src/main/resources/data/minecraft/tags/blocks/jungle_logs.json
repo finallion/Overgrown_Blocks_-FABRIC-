@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:jungle_log",
+    "minecraft:jungle_wood",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_jungle_wood",
+
+    "mossywood:damp_jungle_log",
+    "mossywood:damp_stripped_jungle_log",
+    "mossywood:mossy_jungle_log",
+    "mossywood:mossy_stripped_jungle_log",
+    "mossywood:moss_covered_jungle_log",
+    "mossywood:moss_covered_stripped_jungle_log",
+    "mossywood:overgrown_jungle_log",
+    "mossywood:overgrown_stripped_jungle_log",
+
+    "mossywood:waxed_damp_jungle_log",
+    "mossywood:waxed_damp_stripped_jungle_log",
+    "mossywood:waxed_mossy_jungle_log",
+    "mossywood:waxed_mossy_stripped_jungle_log",
+    "mossywood:waxed_moss_covered_jungle_log",
+    "mossywood:waxed_moss_covered_stripped_jungle_log",
+    "mossywood:waxed_overgrown_jungle_log",
+    "mossywood:waxed_overgrown_stripped_jungle_log"
+  ]
+}

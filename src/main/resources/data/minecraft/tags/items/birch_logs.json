@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:birch_log",
+    "minecraft:birch_wood",
+    "minecraft:stripped_birch_log",
+    "minecraft:stripped_birch_wood",
+
+    "mossywood:damp_birch_log",
+    "mossywood:damp_stripped_birch_log",
+    "mossywood:mossy_birch_log",
+    "mossywood:mossy_stripped_birch_log",
+    "mossywood:moss_covered_birch_log",
+    "mossywood:moss_covered_stripped_birch_log",
+    "mossywood:overgrown_birch_log",
+    "mossywood:overgrown_stripped_birch_log",
+
+    "mossywood:waxed_damp_birch_log",
+    "mossywood:waxed_damp_stripped_birch_log",
+    "mossywood:waxed_mossy_birch_log",
+    "mossywood:waxed_mossy_stripped_birch_log",
+    "mossywood:waxed_moss_covered_birch_log",
+    "mossywood:waxed_moss_covered_stripped_birch_log",
+    "mossywood:waxed_overgrown_birch_log",
+    "mossywood:waxed_overgrown_stripped_birch_log"
+  ]
+}

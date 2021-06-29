@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moss_covered_slabs",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:moss_covered_diorite"
+    }
+  },
+  "result": {
+    "item": "mossywood:moss_covered_diorite_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "overgrown_stairs",
+  "pattern": [
+    "X  ",
+    "XX ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mossywood:overgrown_jungle_planks"
+    }
+  },
+  "result": {
+    "item": "mossywood:overgrown_jungle_stairs",
+    "count": 4
+  }
+}
