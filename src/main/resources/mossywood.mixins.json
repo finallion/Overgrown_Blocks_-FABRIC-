@@ -4,9 +4,6 @@
   "package": "com.finallion.mossywood.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "AxeItemMixin",
-    "HoneycombItemMixin",
-    "OxidizableMixin"
   ],
   "client": [
   ],

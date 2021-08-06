@@ -27,18 +27,15 @@ public class MossyWood implements ModInitializer {
     // damp, mossy, moss-covered, moss-overgrown
     // vegetated, well-vegetated, covered, overgrown
 
-
     @Override
     public void onInitialize() {
         ModBlocks.registerBlocks();
         ModItems.registerItems();
 
 
+
         // data
         //GeneratorHandler.generateData();
-
-
-
 
     }
 

@@ -40,8 +40,11 @@ public class ItemModelGenerator {
     }
 
     private static String getBasicItemModel(String blockName) {
+        String withOutWaxed = blockName.replace("waxed_", "");
+
+
         return "{\n" +
-                "  \"parent\": \"mossywood:block/" + blockName + "\"\n" +
+                "  \"parent\": \"mossywood:block/" + withOutWaxed + "\"\n" +
                 "}\n";
     }
 }

@@ -2,6 +2,8 @@ package com.finallion.mossywood.registry;
 
 import com.finallion.mossywood.MossyWood;
 import com.finallion.mossywood.blocks.*;
+import com.shnupbups.oxidizelib.OxidizableFamily;
+import com.shnupbups.oxidizelib.OxidizeLib;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.fluid.FlowableFluid;
@@ -15,7 +17,526 @@ public class ModBlocks {
 
     public static List<Block> blocksList = new ArrayList<>();
 
-    public static void registerBlocks() { }
+    public static void registerBlocks() {
+
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_OAK_PLANKS, ModBlocks.WAXED_DAMP_OAK_PLANKS)
+                        .exposed(ModBlocks.MOSSY_OAK_PLANKS, ModBlocks.WAXED_MOSSY_OAK_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_OAK_PLANKS, ModBlocks.WAXED_MOSS_COVERED_OAK_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_OAK_PLANKS, ModBlocks.WAXED_OVERGROWN_OAK_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_OAK_SLAB, ModBlocks.WAXED_DAMP_OAK_SLAB)
+                        .exposed(ModBlocks.MOSSY_OAK_SLAB, ModBlocks.WAXED_MOSSY_OAK_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_OAK_SLAB, ModBlocks.WAXED_MOSS_COVERED_OAK_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_OAK_SLAB, ModBlocks.WAXED_OVERGROWN_OAK_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_OAK_STAIRS, ModBlocks.WAXED_DAMP_OAK_STAIRS)
+                        .exposed(ModBlocks.MOSSY_OAK_STAIRS, ModBlocks.WAXED_MOSSY_OAK_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_OAK_STAIRS, ModBlocks.WAXED_MOSS_COVERED_OAK_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_OAK_STAIRS, ModBlocks.WAXED_OVERGROWN_OAK_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_OAK_LOG, ModBlocks.WAXED_DAMP_OAK_LOG)
+                        .exposed(ModBlocks.MOSSY_OAK_LOG, ModBlocks.WAXED_MOSSY_OAK_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_OAK_LOG, ModBlocks.WAXED_MOSS_COVERED_OAK_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_OAK_LOG, ModBlocks.WAXED_OVERGROWN_OAK_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_OAK_LOG, ModBlocks.WAXED_DAMP_STRIPPED_OAK_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_OAK_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_OAK_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_OAK_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_OAK_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_OAK_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_OAK_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DARK_OAK_PLANKS, ModBlocks.WAXED_DAMP_DARK_OAK_PLANKS)
+                        .exposed(ModBlocks.MOSSY_DARK_OAK_PLANKS, ModBlocks.WAXED_MOSSY_DARK_OAK_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_DARK_OAK_PLANKS, ModBlocks.WAXED_MOSS_COVERED_DARK_OAK_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_DARK_OAK_PLANKS, ModBlocks.WAXED_OVERGROWN_DARK_OAK_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DARK_OAK_SLAB, ModBlocks.WAXED_DAMP_DARK_OAK_SLAB)
+                        .exposed(ModBlocks.MOSSY_DARK_OAK_SLAB, ModBlocks.WAXED_MOSSY_DARK_OAK_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_DARK_OAK_SLAB, ModBlocks.WAXED_MOSS_COVERED_DARK_OAK_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_DARK_OAK_SLAB, ModBlocks.WAXED_OVERGROWN_DARK_OAK_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DARK_OAK_STAIRS, ModBlocks.WAXED_DAMP_DARK_OAK_STAIRS)
+                        .exposed(ModBlocks.MOSSY_DARK_OAK_STAIRS, ModBlocks.WAXED_MOSSY_DARK_OAK_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_DARK_OAK_STAIRS, ModBlocks.WAXED_MOSS_COVERED_DARK_OAK_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_DARK_OAK_STAIRS, ModBlocks.WAXED_OVERGROWN_DARK_OAK_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DARK_OAK_LOG, ModBlocks.WAXED_DAMP_DARK_OAK_LOG)
+                        .exposed(ModBlocks.MOSSY_DARK_OAK_LOG, ModBlocks.WAXED_MOSSY_DARK_OAK_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_DARK_OAK_LOG, ModBlocks.WAXED_MOSS_COVERED_DARK_OAK_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_DARK_OAK_LOG, ModBlocks.WAXED_OVERGROWN_DARK_OAK_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_DARK_OAK_LOG, ModBlocks.WAXED_DAMP_STRIPPED_DARK_OAK_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_DARK_OAK_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_DARK_OAK_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_DARK_OAK_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_DARK_OAK_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_DARK_OAK_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_DARK_OAK_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ACACIA_PLANKS, ModBlocks.WAXED_DAMP_ACACIA_PLANKS)
+                        .exposed(ModBlocks.MOSSY_ACACIA_PLANKS, ModBlocks.WAXED_MOSSY_ACACIA_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_ACACIA_PLANKS, ModBlocks.WAXED_MOSS_COVERED_ACACIA_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_ACACIA_PLANKS, ModBlocks.WAXED_OVERGROWN_ACACIA_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ACACIA_SLAB, ModBlocks.WAXED_DAMP_ACACIA_SLAB)
+                        .exposed(ModBlocks.MOSSY_ACACIA_SLAB, ModBlocks.WAXED_MOSSY_ACACIA_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_ACACIA_SLAB, ModBlocks.WAXED_MOSS_COVERED_ACACIA_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_ACACIA_SLAB, ModBlocks.WAXED_OVERGROWN_ACACIA_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ACACIA_STAIRS, ModBlocks.WAXED_DAMP_ACACIA_STAIRS)
+                        .exposed(ModBlocks.MOSSY_ACACIA_STAIRS, ModBlocks.WAXED_MOSSY_ACACIA_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_ACACIA_STAIRS, ModBlocks.WAXED_MOSS_COVERED_ACACIA_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_ACACIA_STAIRS, ModBlocks.WAXED_OVERGROWN_ACACIA_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ACACIA_LOG, ModBlocks.WAXED_DAMP_ACACIA_LOG)
+                        .exposed(ModBlocks.MOSSY_ACACIA_LOG, ModBlocks.WAXED_MOSSY_ACACIA_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_ACACIA_LOG, ModBlocks.WAXED_MOSS_COVERED_ACACIA_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_ACACIA_LOG, ModBlocks.WAXED_OVERGROWN_ACACIA_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_ACACIA_LOG, ModBlocks.WAXED_DAMP_STRIPPED_ACACIA_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_ACACIA_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_ACACIA_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_ACACIA_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_ACACIA_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_ACACIA_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_ACACIA_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_JUNGLE_PLANKS, ModBlocks.WAXED_DAMP_JUNGLE_PLANKS)
+                        .exposed(ModBlocks.MOSSY_JUNGLE_PLANKS, ModBlocks.WAXED_MOSSY_JUNGLE_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_JUNGLE_PLANKS, ModBlocks.WAXED_MOSS_COVERED_JUNGLE_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_JUNGLE_PLANKS, ModBlocks.WAXED_OVERGROWN_JUNGLE_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_JUNGLE_SLAB, ModBlocks.WAXED_DAMP_JUNGLE_SLAB)
+                        .exposed(ModBlocks.MOSSY_JUNGLE_SLAB, ModBlocks.WAXED_MOSSY_JUNGLE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_JUNGLE_SLAB, ModBlocks.WAXED_MOSS_COVERED_JUNGLE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_JUNGLE_SLAB, ModBlocks.WAXED_OVERGROWN_JUNGLE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_JUNGLE_STAIRS, ModBlocks.WAXED_DAMP_JUNGLE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_JUNGLE_STAIRS, ModBlocks.WAXED_MOSSY_JUNGLE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_JUNGLE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_JUNGLE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_JUNGLE_STAIRS, ModBlocks.WAXED_OVERGROWN_JUNGLE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_JUNGLE_LOG, ModBlocks.WAXED_DAMP_JUNGLE_LOG)
+                        .exposed(ModBlocks.MOSSY_JUNGLE_LOG, ModBlocks.WAXED_MOSSY_JUNGLE_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_JUNGLE_LOG, ModBlocks.WAXED_MOSS_COVERED_JUNGLE_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_JUNGLE_LOG, ModBlocks.WAXED_OVERGROWN_JUNGLE_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_JUNGLE_LOG, ModBlocks.WAXED_DAMP_STRIPPED_JUNGLE_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_JUNGLE_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_JUNGLE_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_JUNGLE_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_JUNGLE_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_JUNGLE_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_JUNGLE_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_BIRCH_PLANKS, ModBlocks.WAXED_DAMP_BIRCH_PLANKS)
+                        .exposed(ModBlocks.MOSSY_BIRCH_PLANKS, ModBlocks.WAXED_MOSSY_BIRCH_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_BIRCH_PLANKS, ModBlocks.WAXED_MOSS_COVERED_BIRCH_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_BIRCH_PLANKS, ModBlocks.WAXED_OVERGROWN_BIRCH_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_BIRCH_SLAB, ModBlocks.WAXED_DAMP_BIRCH_SLAB)
+                        .exposed(ModBlocks.MOSSY_BIRCH_SLAB, ModBlocks.WAXED_MOSSY_BIRCH_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_BIRCH_SLAB, ModBlocks.WAXED_MOSS_COVERED_BIRCH_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_BIRCH_SLAB, ModBlocks.WAXED_OVERGROWN_BIRCH_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_BIRCH_STAIRS, ModBlocks.WAXED_DAMP_BIRCH_STAIRS)
+                        .exposed(ModBlocks.MOSSY_BIRCH_STAIRS, ModBlocks.WAXED_MOSSY_BIRCH_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_BIRCH_STAIRS, ModBlocks.WAXED_MOSS_COVERED_BIRCH_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_BIRCH_STAIRS, ModBlocks.WAXED_OVERGROWN_BIRCH_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_BIRCH_LOG, ModBlocks.WAXED_DAMP_BIRCH_LOG)
+                        .exposed(ModBlocks.MOSSY_BIRCH_LOG, ModBlocks.WAXED_MOSSY_BIRCH_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_BIRCH_LOG, ModBlocks.WAXED_MOSS_COVERED_BIRCH_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_BIRCH_LOG, ModBlocks.WAXED_OVERGROWN_BIRCH_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_BIRCH_LOG, ModBlocks.WAXED_DAMP_STRIPPED_BIRCH_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_BIRCH_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_BIRCH_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_BIRCH_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_BIRCH_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_BIRCH_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_BIRCH_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SPRUCE_PLANKS, ModBlocks.WAXED_DAMP_SPRUCE_PLANKS)
+                        .exposed(ModBlocks.MOSSY_SPRUCE_PLANKS, ModBlocks.WAXED_MOSSY_SPRUCE_PLANKS)
+                        .weathered(ModBlocks.MOSS_COVERED_SPRUCE_PLANKS, ModBlocks.WAXED_MOSS_COVERED_SPRUCE_PLANKS)
+                        .oxidized(ModBlocks.OVERGROWN_SPRUCE_PLANKS, ModBlocks.WAXED_OVERGROWN_SPRUCE_PLANKS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SPRUCE_SLAB, ModBlocks.WAXED_DAMP_SPRUCE_SLAB)
+                        .exposed(ModBlocks.MOSSY_SPRUCE_SLAB, ModBlocks.WAXED_MOSSY_SPRUCE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_SPRUCE_SLAB, ModBlocks.WAXED_MOSS_COVERED_SPRUCE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_SPRUCE_SLAB, ModBlocks.WAXED_OVERGROWN_SPRUCE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SPRUCE_STAIRS, ModBlocks.WAXED_DAMP_SPRUCE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_SPRUCE_STAIRS, ModBlocks.WAXED_MOSSY_SPRUCE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_SPRUCE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_SPRUCE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_SPRUCE_STAIRS, ModBlocks.WAXED_OVERGROWN_SPRUCE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SPRUCE_LOG, ModBlocks.WAXED_DAMP_SPRUCE_LOG)
+                        .exposed(ModBlocks.MOSSY_SPRUCE_LOG, ModBlocks.WAXED_MOSSY_SPRUCE_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_SPRUCE_LOG, ModBlocks.WAXED_MOSS_COVERED_SPRUCE_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_SPRUCE_LOG, ModBlocks.WAXED_OVERGROWN_SPRUCE_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STRIPPED_SPRUCE_LOG, ModBlocks.WAXED_DAMP_STRIPPED_SPRUCE_LOG)
+                        .exposed(ModBlocks.MOSSY_STRIPPED_SPRUCE_LOG, ModBlocks.WAXED_MOSSY_STRIPPED_SPRUCE_LOG)
+                        .weathered(ModBlocks.MOSS_COVERED_STRIPPED_SPRUCE_LOG, ModBlocks.WAXED_MOSS_COVERED_STRIPPED_SPRUCE_LOG)
+                        .oxidized(ModBlocks.OVERGROWN_STRIPPED_SPRUCE_LOG, ModBlocks.WAXED_OVERGROWN_STRIPPED_SPRUCE_LOG)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STONE, ModBlocks.WAXED_DAMP_STONE)
+                        .exposed(ModBlocks.MOSSY_STONE, ModBlocks.WAXED_MOSSY_STONE)
+                        .weathered(ModBlocks.MOSS_COVERED_STONE, ModBlocks.WAXED_MOSS_COVERED_STONE)
+                        .oxidized(ModBlocks.OVERGROWN_STONE, ModBlocks.WAXED_OVERGROWN_STONE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STONE_SLAB, ModBlocks.WAXED_DAMP_STONE_SLAB)
+                        .exposed(ModBlocks.MOSSY_STONE_SLAB, ModBlocks.WAXED_MOSSY_STONE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_STONE_SLAB, ModBlocks.WAXED_MOSS_COVERED_STONE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_STONE_SLAB, ModBlocks.WAXED_OVERGROWN_STONE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_STONE_STAIRS, ModBlocks.WAXED_DAMP_STONE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_STONE_STAIRS, ModBlocks.WAXED_MOSSY_STONE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_STONE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_STONE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_STONE_STAIRS, ModBlocks.WAXED_OVERGROWN_STONE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SMOOTH_STONE, ModBlocks.WAXED_DAMP_SMOOTH_STONE)
+                        .exposed(ModBlocks.MOSSY_SMOOTH_STONE, ModBlocks.WAXED_MOSSY_SMOOTH_STONE)
+                        .weathered(ModBlocks.MOSS_COVERED_SMOOTH_STONE, ModBlocks.WAXED_MOSS_COVERED_SMOOTH_STONE)
+                        .oxidized(ModBlocks.OVERGROWN_SMOOTH_STONE, ModBlocks.WAXED_OVERGROWN_SMOOTH_STONE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_SMOOTH_STONE_SLAB, ModBlocks.WAXED_DAMP_SMOOTH_STONE_SLAB)
+                        .exposed(ModBlocks.MOSSY_SMOOTH_STONE_SLAB, ModBlocks.WAXED_MOSSY_SMOOTH_STONE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_SMOOTH_STONE_SLAB, ModBlocks.WAXED_MOSS_COVERED_SMOOTH_STONE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_SMOOTH_STONE_SLAB, ModBlocks.WAXED_OVERGROWN_SMOOTH_STONE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DIORITE, ModBlocks.WAXED_DAMP_DIORITE)
+                        .exposed(ModBlocks.MOSSY_DIORITE, ModBlocks.WAXED_MOSSY_DIORITE)
+                        .weathered(ModBlocks.MOSS_COVERED_DIORITE, ModBlocks.WAXED_MOSS_COVERED_DIORITE)
+                        .oxidized(ModBlocks.OVERGROWN_DIORITE, ModBlocks.WAXED_OVERGROWN_DIORITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DIORITE_SLAB, ModBlocks.WAXED_DAMP_DIORITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_DIORITE_SLAB, ModBlocks.WAXED_MOSSY_DIORITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_DIORITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_DIORITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_DIORITE_SLAB, ModBlocks.WAXED_OVERGROWN_DIORITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_DIORITE_STAIRS, ModBlocks.WAXED_DAMP_DIORITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_DIORITE_STAIRS, ModBlocks.WAXED_MOSSY_DIORITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_DIORITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_DIORITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_DIORITE_STAIRS, ModBlocks.WAXED_OVERGROWN_DIORITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DIORITE, ModBlocks.WAXED_DAMP_POLISHED_DIORITE)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DIORITE, ModBlocks.WAXED_MOSSY_POLISHED_DIORITE)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DIORITE, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DIORITE)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DIORITE, ModBlocks.WAXED_OVERGROWN_POLISHED_DIORITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DIORITE_SLAB, ModBlocks.WAXED_DAMP_POLISHED_DIORITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DIORITE_SLAB, ModBlocks.WAXED_MOSSY_POLISHED_DIORITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DIORITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DIORITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DIORITE_SLAB, ModBlocks.WAXED_OVERGROWN_POLISHED_DIORITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DIORITE_STAIRS, ModBlocks.WAXED_DAMP_POLISHED_DIORITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DIORITE_STAIRS, ModBlocks.WAXED_MOSSY_POLISHED_DIORITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DIORITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DIORITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DIORITE_STAIRS, ModBlocks.WAXED_OVERGROWN_POLISHED_DIORITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_GRANITE, ModBlocks.WAXED_DAMP_GRANITE)
+                        .exposed(ModBlocks.MOSSY_GRANITE, ModBlocks.WAXED_MOSSY_GRANITE)
+                        .weathered(ModBlocks.MOSS_COVERED_GRANITE, ModBlocks.WAXED_MOSS_COVERED_GRANITE)
+                        .oxidized(ModBlocks.OVERGROWN_GRANITE, ModBlocks.WAXED_OVERGROWN_GRANITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_GRANITE_SLAB, ModBlocks.WAXED_DAMP_GRANITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_GRANITE_SLAB, ModBlocks.WAXED_MOSSY_GRANITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_GRANITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_GRANITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_GRANITE_SLAB, ModBlocks.WAXED_OVERGROWN_GRANITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_GRANITE_STAIRS, ModBlocks.WAXED_DAMP_GRANITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_GRANITE_STAIRS, ModBlocks.WAXED_MOSSY_GRANITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_GRANITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_GRANITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_GRANITE_STAIRS, ModBlocks.WAXED_OVERGROWN_GRANITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_GRANITE, ModBlocks.WAXED_DAMP_POLISHED_GRANITE)
+                        .exposed(ModBlocks.MOSSY_POLISHED_GRANITE, ModBlocks.WAXED_MOSSY_POLISHED_GRANITE)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_GRANITE, ModBlocks.WAXED_MOSS_COVERED_POLISHED_GRANITE)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_GRANITE, ModBlocks.WAXED_OVERGROWN_POLISHED_GRANITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_GRANITE_SLAB, ModBlocks.WAXED_DAMP_POLISHED_GRANITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_POLISHED_GRANITE_SLAB, ModBlocks.WAXED_MOSSY_POLISHED_GRANITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_GRANITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_POLISHED_GRANITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_GRANITE_SLAB, ModBlocks.WAXED_OVERGROWN_POLISHED_GRANITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_GRANITE_STAIRS, ModBlocks.WAXED_DAMP_POLISHED_GRANITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_POLISHED_GRANITE_STAIRS, ModBlocks.WAXED_MOSSY_POLISHED_GRANITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_GRANITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_POLISHED_GRANITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_GRANITE_STAIRS, ModBlocks.WAXED_OVERGROWN_POLISHED_GRANITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ANDESITE, ModBlocks.WAXED_DAMP_ANDESITE)
+                        .exposed(ModBlocks.MOSSY_ANDESITE, ModBlocks.WAXED_MOSSY_ANDESITE)
+                        .weathered(ModBlocks.MOSS_COVERED_ANDESITE, ModBlocks.WAXED_MOSS_COVERED_ANDESITE)
+                        .oxidized(ModBlocks.OVERGROWN_ANDESITE, ModBlocks.WAXED_OVERGROWN_ANDESITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ANDESITE_SLAB, ModBlocks.WAXED_DAMP_ANDESITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_ANDESITE_SLAB, ModBlocks.WAXED_MOSSY_ANDESITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_ANDESITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_ANDESITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_ANDESITE_SLAB, ModBlocks.WAXED_OVERGROWN_ANDESITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_ANDESITE_STAIRS, ModBlocks.WAXED_DAMP_ANDESITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_ANDESITE_STAIRS, ModBlocks.WAXED_MOSSY_ANDESITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_ANDESITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_ANDESITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_ANDESITE_STAIRS, ModBlocks.WAXED_OVERGROWN_ANDESITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_ANDESITE, ModBlocks.WAXED_DAMP_POLISHED_ANDESITE)
+                        .exposed(ModBlocks.MOSSY_POLISHED_ANDESITE, ModBlocks.WAXED_MOSSY_POLISHED_ANDESITE)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_ANDESITE, ModBlocks.WAXED_MOSS_COVERED_POLISHED_ANDESITE)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_ANDESITE, ModBlocks.WAXED_OVERGROWN_POLISHED_ANDESITE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_ANDESITE_SLAB, ModBlocks.WAXED_DAMP_POLISHED_ANDESITE_SLAB)
+                        .exposed(ModBlocks.MOSSY_POLISHED_ANDESITE_SLAB, ModBlocks.WAXED_MOSSY_POLISHED_ANDESITE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_ANDESITE_SLAB, ModBlocks.WAXED_MOSS_COVERED_POLISHED_ANDESITE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_ANDESITE_SLAB, ModBlocks.WAXED_OVERGROWN_POLISHED_ANDESITE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_ANDESITE_STAIRS, ModBlocks.WAXED_DAMP_POLISHED_ANDESITE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_POLISHED_ANDESITE_STAIRS, ModBlocks.WAXED_MOSSY_POLISHED_ANDESITE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_ANDESITE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_POLISHED_ANDESITE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_ANDESITE_STAIRS, ModBlocks.WAXED_OVERGROWN_POLISHED_ANDESITE_STAIRS)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DEEPSLATE, ModBlocks.WAXED_DAMP_POLISHED_DEEPSLATE)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DEEPSLATE, ModBlocks.WAXED_MOSSY_POLISHED_DEEPSLATE)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DEEPSLATE, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DEEPSLATE)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DEEPSLATE, ModBlocks.WAXED_OVERGROWN_POLISHED_DEEPSLATE)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DEEPSLATE_SLAB, ModBlocks.WAXED_DAMP_POLISHED_DEEPSLATE_SLAB)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DEEPSLATE_SLAB, ModBlocks.WAXED_MOSSY_POLISHED_DEEPSLATE_SLAB)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DEEPSLATE_SLAB, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DEEPSLATE_SLAB)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DEEPSLATE_SLAB, ModBlocks.WAXED_OVERGROWN_POLISHED_DEEPSLATE_SLAB)
+                        .build()
+        );
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(ModBlocks.DAMP_POLISHED_DEEPSLATE_STAIRS, ModBlocks.WAXED_DAMP_POLISHED_DEEPSLATE_STAIRS)
+                        .exposed(ModBlocks.MOSSY_POLISHED_DEEPSLATE_STAIRS, ModBlocks.WAXED_MOSSY_POLISHED_DEEPSLATE_STAIRS)
+                        .weathered(ModBlocks.MOSS_COVERED_POLISHED_DEEPSLATE_STAIRS, ModBlocks.WAXED_MOSS_COVERED_POLISHED_DEEPSLATE_STAIRS)
+                        .oxidized(ModBlocks.OVERGROWN_POLISHED_DEEPSLATE_STAIRS, ModBlocks.WAXED_OVERGROWN_POLISHED_DEEPSLATE_STAIRS)
+                        .build()
+        );
+
+
+
+        OxidizeLib.registerOxidizableFamily(
+                new OxidizableFamily.Builder()
+                        .unaffected(DAMP_DEEPSLATE, WAXED_DAMP_DEEPSLATE)
+                        .exposed(MOSSY_DEEPSLATE, WAXED_MOSSY_DEEPSLATE)
+                        .weathered(MOSS_COVERED_DEEPSLATE, WAXED_MOSS_COVERED_DEEPSLATE)
+                        .oxidized(OVERGROWN_DEEPSLATE, WAXED_OVERGROWN_DEEPSLATE)
+                        .build()
+        );
+
+
+    }
 
     public static Block createBlock(Block block, String id) {
         Registry.register(Registry.BLOCK, new Identifier(MossyWood.MOD_ID, id), block);

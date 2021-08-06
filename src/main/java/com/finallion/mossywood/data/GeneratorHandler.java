@@ -27,8 +27,8 @@ public class GeneratorHandler {
     // target directories + lang file (en_us.json) needs to be present to generate
     public static void generateData() {
         //BlockStateGenerator.initBlockStateGenerator(basePath + blockStatePath);
-        LangGenerator.initLangGenerator(basePath + langPath);
-        //ItemModelGenerator.initItemModelGenerator(basePath + itemModelPath);
+        //LangGenerator.initLangGenerator(basePath + langPath);
+        //rItemModelGenerator.initItemModelGenerator(basePath + itemModelPath);
         //BlockModelGenerator.initBlockModelGenerator(basePath + blockModelPath);
         //LootTableGenerator.initLootTableGenerator(basePath + lootTablePath);
     }
